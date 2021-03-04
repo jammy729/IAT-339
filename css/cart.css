@@ -1,0 +1,145 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+
+}
+body {
+    background-color: #FFE7E7;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* ITEM LISTING */
+.edges {
+    grid-column: span 1;
+}
+
+.item-listing {
+    grid-column: span 6;
+}
+
+#placeholder {
+    margin-right: 40px;
+    height: 50%;
+    float: left;
+
+}
+
+#price {
+    float: right;
+    font-size: 1.3em;
+}
+
+/* .button {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+} */
+
+/*remove and edit button */
+.remove, .edit {
+    background-color: #C4C4C4;
+    color: black;
+
+    margin-right: 1em;
+    border-radius: 10px;
+    padding: 10px 45px;
+
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.price {
+    float: right;
+}
+
+/* PRICE-SUMMARY  */
+.price-summary {
+    grid-column: span 3;
+    background-color: #221122;
+    border-radius: 28px;
+}
+
+#checkout-text {
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+}
+
+.checkout-text {
+    float: right;
+    color: white;
+}
+
+.summary {
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+.price-content {
+    background-color: none;
+}
+
+
+#paypal {
+    margin-left: 15%;
+    background-color: #A2EFF4;
+
+    transform: translate(50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em 3.3em;
+    margin-bottom: 30px;
+    color: black;
+    border-radius: 10px;
+
+}
+
+#checkout {
+    margin-left: 8%;
+    background-color: #FD7575;
+    transform: translate(50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em 3em;
+    margin-bottom: 30px;
+    color: black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-menu {
+        grid-column: span 6;
+    }
+
+    .main-content {
+        grid-column: span 6;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation-menu {
+        grid-column: span 12;
+    }
+
+    .main-content {
+        grid-column: span 12;
+    }
+}
+
+.box {
+    padding: 50px;
+    background: #ddd;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
